@@ -4,3 +4,24 @@
 body {
   padding-top: 50px;
 }
+
+.thumbnail {margin-bottom:6px;}
+
+.carousel-control.left,.carousel-control.right{
+  background-image:none;
+  margin-top:10%;
+  width:5%;
+}
+
+
+
+/*=== MENU COM ICONES ===*/
+#nav { width: 980px; background: #fff; margin: 180px; float: left; border-radius: 5px}
+#nav ul { margin: 0; padding: 0; list-style: none; width: 100%; float: left; }
+#nav ul li { float: left; font: 16px arial; border-right: 1px solid #eee; }
+#nav ul li a { color: #888; text-decoration: none; padding: 20px; display: block; }
+#nav ul li:hover { background: #eee; }
+#nav ul li .home { background: url(image/01-home.png) no-repeat center ; float: left; width: 100%; padding: 30px 0; margin-bottom: 15px; }
+#nav ul li .sobre { background: url(image/03-sobre.png) no-repeat center ; float: left; width: 100%; padding: 30px 0; margin-bottom: 15px; }
+#nav ul li .portfolio { background: url(image/04-portfolio.png) no-repeat center ; float: left; width: 100%; padding: 30px 0; margin-bottom: 15px; }
+#nav ul li .contato { background: url(image/06-contato.png) no-repeat center ; float: left; width: 100%; padding: 30px 0; margin-bottom: 15px; }

@@ -1,61 +1,125 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Galeria</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  
+    <title>Portfólio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
+  
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  
+
 </head>
 
 <body>
  <div class="container">
-    <header>
-      <h1>Guia do Bootstrap 3</h1>
+     <div class="row">
+
+    <header class="page-header">
+      <h1>Antônio F. Cavalcante</h1>
     </header>
-    <div class="row">
-      <div role="main" class="col-md-12">
-        <h2>Galeria</h2>
-<div id="destaque" class="row">
-  <div class="col-md-12">
-    <img src="http://placehold.it/1200x300" class="img-responsive"/>
+    
+      <div class="row">
+            
+            <div class="col-12 col-md-4 col-sm-6">
+          <a title="Image 1" href="#"> 
+            <img class="thumbnail img-responsive" id="image-1" src="DSC_9715.JPG">
+          </a>
+        </div>
+      
+        <div class="col-12 col-md-4 col-sm-6">
+          <a title="Image 2" href="#"> 
+            <img class="thumbnail img-responsive" id="image-2" src="DSC_9757.JPG">
+          </a>
+
+        </div>
+        <div class="col-12 col-md-4 col-sm-6">
+          <a title="Image 3" href="#"> 
+            <img class="thumbnail img-responsive" id="image-3" src="DSC_9766.JPG">
+          </a>
+        </div>
+    </div>
+    
+    <hr>
+    
   </div>
-</div> <!-- /.destaque -->
+</div>
 
-		
-		<div id="miniaturas" class="row">
-  <div class="col-md-12">
-    <h3>Veja Mais</h3>
-</div>
-  <div class="col-md-3">
-    <a class="thumbnail" href="#">
-      <img src="http://placehold.it/300x150" class="img-responsive"/>
-    </a>
-</div>
-  <div class="col-md-3">
-    <a class="thumbnail" href="#">
-      <img src="http://placehold.it/300x150" class="img-responsive"/>
-    </a>
-</div>
-<div class="col-md-3">
-    <a class="thumbnail" href="#">
-      <img src="http://placehold.it/300x150" class="img-responsive"/>
-    </a>
+  <div class="hidden" id="img-repo">
+    
+    <!-- #image-1 -->
+    <div class="item" id="image-1">
+      <img class="thumbnail img-responsive" title="Image 11" src="DSC_9715.JPG">
+    </div>
+    <div class="item" id="image-1">
+      <img class="thumbnail img-responsive" title="Image 12" src="DSC_9715.JPG">
+    </div>
+    <div class="item" id="image-1">
+      <img class="thumbnail img-responsive" title="Image 13" src="DSC_9715.JPG">
+    </div>
+      
+    <!-- #image-2 -->
+    <div class="item" id="image-2">
+      <img class="thumbnail img-responsive" title="Image 21" src="DSC_9757.JPG">
+    </div>
+    <div class="item" id="image-2">
+      <img class="thumbnail img-responsive" title="Image 21" src="DSC_9757.JPG">
+    </div>
+    <div class="item" id="image-2">
+      <img class="thumbnail img-responsive" title="Image 23" src="DSC_9757.JPG">
+    </div>   
+      
+    <!-- #image-3-->
+    <div class="item" id="image-3">
+      <img class="thumbnail img-responsive" title="Image 31" src="DSC_9766.JPG">
+    </div>
+    <div class="item" id="image-3">
+      <img class="thumbnail img-responsive" title="Image 32" src="DSC_9766.JPG">
+    </div>
+    <div class="item" id="image-3">
+      <img class="thumbnail img-responsive" title="Image 33" src="DSC_9766.JPG">
+    </div>        
+    
   </div>
-</div> <!-- /.miniaturas -->
 
+<div class="modal" id="modal-gallery" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal">×</button>
+          <h3 class="modal-title"></h3>
+      </div>
+      <div class="modal-body">
+          <div id="modal-carousel" class="carousel">
+   
+            <div class="carousel-inner">           
+            </div>
+            
+            <a class="carousel-control left" href="#modal-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            <a class="carousel-control right" href="#modal-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            
+          </div>
+      </div>
+      <div class="modal-footer">
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
 
-
-
-    </div> <!-- /.row -->
     <hr />
     <footer>
-      <p class="text-muted">&copy; 2015 - Web Dev Academy</p>
+      <p class="text-muted">&copy; 2016 - Centro Universitário Senac</p>
     </footer>
+  
   </div> <!-- /.container -->
 
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
